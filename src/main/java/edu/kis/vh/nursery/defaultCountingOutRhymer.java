@@ -7,8 +7,7 @@ public class defaultCountingOutRhymer {
 	public static final int EMPTY_RHYMER_INDICATOR = -1;
 
 
-	final private int[] NUMBERS = new int[INT_12];
-
+	final private int[] NUMBERS = new int[MAX];
 	public int total = EMPTY_RHYMER_INDICATOR;
 
 	public void countIn(int in) {
@@ -17,7 +16,7 @@ public class defaultCountingOutRhymer {
 	}
 
 	public boolean callCheck() {
-			return total == INT_1;
+			return total == EMPTY_RHYMER_INDICATOR;
 		}
 
 		public boolean isFull() {
