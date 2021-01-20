@@ -5,6 +5,8 @@ import edu.kis.vh.nursery.HanoiRhymer;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.Rhymersfactory;
 
+//TODO: many unused imports
+
 class RhymersDemo {
 
 	public static final int INT_15 = 15;
