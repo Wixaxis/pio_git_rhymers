@@ -15,3 +15,5 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
 			super.countIn(in);
 	}
 }
+// alt + strzałka w VSCode przełącza między ostatnio otwieranymi plikami w
+// projekcie
