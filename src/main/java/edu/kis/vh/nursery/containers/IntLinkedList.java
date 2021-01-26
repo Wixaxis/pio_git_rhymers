@@ -1,7 +1,6 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.containers;
 
-
-public class IntLinkedList {
+public class IntLinkedList implements Container {
 
 	public static final int DEFAULT_VALUE = -1;
 	Node last;
@@ -25,7 +24,7 @@ public class IntLinkedList {
 		return false;
 	}
 
-	public int top() {
+	public int peekaboo() {
 		if (isEmpty())
 			return DEFAULT_VALUE;
 		return last.getValue();
@@ -37,6 +36,24 @@ public class IntLinkedList {
 		int ret = last.getValue();
 		last = last.prev;
 		return ret;
+	}
+
+	@Override
+	public int size() {
+		int size = 0;
+		Node current = last;
+		while (true) {
+			if (current.prev == null)
+				break;
+			current = current.prev;
+		}
+		while (true) {
+			if (current.next == null)
+				break;
+			current = current.next;
+			size++;
+		}
+		return size;
 	}
 
 }
